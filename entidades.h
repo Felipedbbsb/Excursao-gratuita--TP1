@@ -6,31 +6,18 @@
 
 using namespace std;
 
-/* -----------------------------------------------------------------------
-// Estrutura de código sugerida para declaração de classe entidade.
-// Substituir Entidade por nome da classe.
-// Substituir Dominio.
-// Substituir nomeAtributo.
-class Entidade {
-    private:
-            Dominio nomeAtributo;                   // Declarar cada atributo da classe.
-    public:
-            void setnomeAtributo(const Dominio&);   // Declarar método set para cada atributo.
-            Dominio getnomeAtributo() const;        // Declarar método get para cada atributo.
-};
-inline void Entidade::setnomeAtributo(const Dominio &nomeAtributo){
-    this->nomeAtributo = nomeAtributo;
-}
-inline Dominio Entidade::getnomeAtributo() const{
-    return nomeAtributo;
-}
------------------------------------------------------------------------ */
 // -----------------------------------------------------------------------
-// Exemplo de declaração de classe entidade e implementações de métodos.
+// Exemplo de declaraÃ§Ã£o de classe entidade e implementaÃ§Ãµes de mÃ©todos.
 // Matricula: 202021749
 // Felipe Dantas Borges
 
 //Excursao:
+///
+///@brief Padr&atilde;o para representa&ccedil;&atilde;o de Excurs&atilde;o
+///
+///
+///Excurs&atilde;o cont&eacute;m dom&iacute;nios Codigo, Titulo, Nota, Cidade, Duracao, Descricao e Endereco
+
 
 class Excursao {
 private:
@@ -42,25 +29,121 @@ private:
     Descricao descricao;
     Endereco endereco;
 public:
+/// Armazena codigo.
+///
+/// @param valor codigo.
+///
+/// @return
+///
+/// - Retorna true  caso codigo tenha sido armazenado.
+/// - Retorna false caso codigo n&atilde;o tenha sido armazenado por ser inv&aacute;lido.
+///
     void setCodigo(const Codigo&);
+/// Retorna codigo.
+///
+/// @return codigo
+///
     Codigo getCodigo() const;
-
+//-------------------------------------------------------------------------------
+/// Armazena titulo.
+///
+/// @param valor titulo.
+///
+/// @return
+///
+/// - Retorna true  caso titulo tenha sido armazenado.
+/// - Retorna false caso titulo n&atilde;o tenha sido armazenado por ser inv&aacute;lido.
+///
     void setTitulo(const Titulo&);
+/// Retorna titulo.
+///
+/// @return titulo
+///
     Titulo getTitulo() const;
 
+//-------------------------------------------------------------------------------
+/// Armazena nota.
+///
+/// @param valor nota.
+///
+/// @return
+///
+/// - Retorna true  caso nota tenha sido armazenado.
+/// - Retorna false caso nota n&atilde;o tenha sido armazenado por ser inv&aacute;lido.
+///
     void setNota(const Nota&);
+/// Retorna nota.
+///
+/// @return nota
+///
     Nota getNota() const;
 
+//-------------------------------------------------------------------------------
+/// Armazena cidade.
+///
+/// @param valor cidade.
+///
+/// @return
+///
+/// - Retorna true  caso cidade tenha sido armazenado.
+/// - Retorna false caso cidade n&atilde;o tenha sido armazenado por ser inv&aacute;lido.
+///
     void setCidade(const Cidade&);
+/// Retorna cidade.
+///
+/// @return cidade
+///
     Cidade getCidade() const;
 
+//-------------------------------------------------------------------------------
+/// Armazena duracao.
+///
+/// @param valor duracao.
+///
+/// @return
+///
+/// - Retorna true  caso duracao tenha sido armazenado.
+/// - Retorna false caso duracao n&atilde;o tenha sido armazenado por ser inv&aacute;lido.
+///
     void setDuracao(const Duracao&);
+/// Retorna duracao.
+///
+/// @return duracao
+///
     Duracao getDuracao() const;
 
+//-------------------------------------------------------------------------------
+/// Armazena descricao.
+///
+/// @param valor descricao.
+///
+/// @return
+///
+/// - Retorna true  caso descricao tenha sido armazenado.
+/// - Retorna false caso descricao n&atilde;o tenha sido armazenado por ser inv&aacute;lido.
+///
     void setDescricao(const Descricao&);
+/// Retorna descricao.
+///
+/// @return descricao
+///
     Descricao getDescricao() const;
 
+//-------------------------------------------------------------------------------
+/// Armazena endereco.
+///
+/// @param valor endereco.
+///
+/// @return
+///
+/// - Retorna true  caso endereco tenha sido armazenado.
+/// - Retorna false caso endereco n&atilde;o tenha sido armazenado por ser inv&aacute;lido.
+///
     void setEndereco(const Endereco&);
+/// Retorna endereco.
+///
+/// @return endereco
+///
     Endereco getEndereco() const;
 };
 //#--------------------------------------------------------
@@ -117,7 +200,7 @@ inline Endereco Excursao::getEndereco() const {
 // -----------------------------------------------------------------------
 // Matricula: 202006420
 // Gustavo Pierre Starling
-// Sessão:
+// SessÃ£o:
 
 class Sessao {
 private:
@@ -170,7 +253,7 @@ inline Idioma Sessao::getIdioma() const {
 
 //----------------------------------------------------------------------- */
 //Matricula: 202006448
-// Rafael Hamú Campos
+// Rafael HamÃº Campos
 class Avaliacao{
 private:
 
@@ -213,7 +296,7 @@ inline Descricao Avaliacao::getDescricao() const {
 }
 //----------------------------------------------------------------------- */
 //Matricula: 202006448
-// Rafael Hamú Campos
+// Rafael HamÃº Campos
 class Usuario{
 private:
     Nome nome;
