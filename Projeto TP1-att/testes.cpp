@@ -1,7 +1,7 @@
 #include "testes.h"
 
 // --------------------------------------------------------------------------
-// Implementações de métodos de classe de teste de unidade.
+// ImplementaÃ§Ãµes de mÃ©todos de classe de teste de unidade.
 //Matricula: 202021749
 // Felipe Dantas Borges
 //Email
@@ -408,18 +408,18 @@ int TUNome::run(){
 // Rafael Hamu Campos
 //Nota
 void TUNota::setUp(){
-    Nota = new nota();
+    nota = new Nota();
     estado = SUCESSO;
 }
 
 void TUNota::tearDown(){
-    delete Nota;
+    delete nota;
 }
 
 void TUNota::testarCenarioSucesso(){
     try{
-        Nota->setValor(VALOR_VALIDO);
-        if (Nota->getValor() != VALOR_VALIDO)
+        nota->setValor(VALOR_VALIDO);
+        if (nota->getValor() != VALOR_VALIDO)
             estado = FALHA;
     }
     catch(invalid_argument &excecao){
@@ -429,11 +429,11 @@ void TUNota::testarCenarioSucesso(){
 
 void TUNota::testarCenarioFalha(){
     try{
-        Nota->setValor(VALOR_INVALIDO);
+        nota->setValor(VALOR_INVALIDO);
         estado = FALHA;
     }
     catch(invalid_argument &excecao){
-        if (Nota->getValor() == VALOR_INVALIDO)
+        if (nota->getValor() == VALOR_INVALIDO)
             estado = FALHA;
     }
 }
@@ -451,18 +451,18 @@ int TUNota::run(){
 // Rafael Hamu Campos
 //Idioma
 void TUIdioma::setUp(){
-    Idioma = new Idioma();
+    idioma = new Idioma();
     estado = SUCESSO;
 }
 
 void TUIdioma::tearDown(){
-    delete Idioma;
+    delete idioma;
 }
 
 void TUIdioma::testarCenarioSucesso(){
     try{
-        Idioma->setValor(VALOR_VALIDO);
-        if (Idioma->getValor() != VALOR_VALIDO)
+        idioma->setValor(VALOR_VALIDO);
+        if (idioma->getValor() != VALOR_VALIDO)
             estado = FALHA;
     }
     catch(invalid_argument &excecao){
@@ -472,11 +472,11 @@ void TUIdioma::testarCenarioSucesso(){
 
 void TUIdioma::testarCenarioFalha(){
     try{
-        Idioma->setValor(VALOR_INVALIDO);
+        idioma->setValor(VALOR_INVALIDO);
         estado = FALHA;
     }
     catch(invalid_argument &excecao){
-        if (Idioma->getValor() == VALOR_INVALIDO)
+        if (idioma->getValor() == VALOR_INVALIDO)
             estado = FALHA;
     }
 }
@@ -493,18 +493,18 @@ int TUIdioma::run(){
 // Rafael Hamu Campos
 //Duracao
 void TUDuracao::setUp(){
-    Duracao = new duracao();
+    duracao = new Duracao();
     estado = SUCESSO;
 }
 
 void TUDuracao::tearDown(){
-    delete Idioma;
+    delete duracao;
 }
 
 void TUDuracao::testarCenarioSucesso(){
     try{
-        Duracao->setValor(VALOR_VALIDO);
-        if (Duracao->getValor() != VALOR_VALIDO)
+        duracao->setValor(VALOR_VALIDO);
+        if (duracao->getValor() != VALOR_VALIDO)
             estado = FALHA;
     }
     catch(invalid_argument &excecao){
@@ -514,11 +514,11 @@ void TUDuracao::testarCenarioSucesso(){
 
 void TUDuracao::testarCenarioFalha(){
     try{
-        Duracao->setValor(VALOR_INVALIDO);
+        duracao->setValor(VALOR_INVALIDO);
         estado = FALHA;
     }
     catch(invalid_argument &excecao){
-        if (Duracao->getValor() == VALOR_INVALIDO)
+        if (duracao->getValor() == VALOR_INVALIDO)
             estado = FALHA;
     }
 }
@@ -535,18 +535,18 @@ int TUDuracao::run(){
 // Rafael Hamu Campos
 //Descricao
 void TUDescricao::setUp(){
-    Descricao = new descricao();
+    descricao = new Descricao();
     estado = SUCESSO;
 }
 
 void TUDescricao::tearDown(){
-    delete Idioma;
+    delete descricao;
 }
 
 void TUDescricao::testarCenarioSucesso(){
     try{
-        Descricao->setValor(VALOR_VALIDO);
-        if (Descricao->getValor() != VALOR_VALIDO)
+        descricao->setValor(VALOR_VALIDO);
+        if (descricao->getValor() != VALOR_VALIDO)
             estado = FALHA;
     }
     catch(invalid_argument &excecao){
@@ -556,11 +556,11 @@ void TUDescricao::testarCenarioSucesso(){
 
 void TUDescricao::testarCenarioFalha(){
     try{
-        Descricao->setValor(VALOR_INVALIDO);
+        descricao->setValor(VALOR_INVALIDO);
         estado = FALHA;
     }
     catch(invalid_argument &excecao){
-        if (Descricao->getValor() == VALOR_INVALIDO)
+        if (descricao->getValor() == VALOR_INVALIDO)
             estado = FALHA;
     }
 }
@@ -611,9 +611,9 @@ void TUSessao::testarCenarioSucesso(){
         idioma.setValor(VALOR_VALIDO_IDIOMA);
 
         sessao->setCodigo(codigo);
-        sessao->setTitulo(data);
-        sessao->setCodigo(horario);
-        sessao->setCodigo(idioma);
+        sessao->setData(data);
+        sessao->setHorario(horario);
+        sessao->setIdioma(idioma);
 
 
         if (sessao->getCodigo().getValor() != VALOR_VALIDO_CODIGO && sessao->getData().getValor() != VALOR_VALIDO_DATA &&
@@ -628,7 +628,7 @@ void TUSessao::testarCenarioSucesso(){
 
 // --------------------------------------------------------------------------
 // Matricula: 202021749
-// Felipe Dantas
+// Felipe Dantas Borges
 
 // ENTIDADE Excursao:
 
@@ -660,18 +660,18 @@ void TUExcursao::testarCenarioSucesso(){
         endereco.setValor(VALOR_VALIDO_ENDERECO);
 
 
-        sessao->setCodigo(codigo);
-        sessao->setTitulo(titulo);
-        sessao->setCodigo(nota);
-        sessao->setCodigo(cidade);
-        sessao->setCodigo(duracao);
-        sessao->setTitulo(descricao);
-        sessao->setCodigo(endereco);
+        excursao->setCodigo(codigo);
+        excursao->setTitulo(titulo);
+        excursao->setNota(nota);
+        excursao->setCidade(cidade);
+        excursao->setDuracao(duracao);
+        excursao->setDescricao(descricao);
+        excursao->setEndereco(endereco);
 
-        if (sessao->getCodigo().getValor() != VALOR_VALIDO_CODIGO && sessao->getTitulo().getValor() != VALOR_VALIDO_TITULO &&
-            sessao->getNota().getValor() != VALOR_VALIDO_NOTA && sessao->getCidade().getValor() != VALOR_VALIDO_CIDADE &&
-            sessao->getDuracao().getValor() != VALOR_VALIDO_DURACAO && sessao->getDescricao().getValor() != VALOR_VALIDO_DESCRICAO &&
-            sessao->getEndereco().getValor() != VALOR_VALIDO_ENDERECO)
+        if (excursao->getCodigo().getValor() != VALOR_VALIDO_CODIGO && excursao->getTitulo().getValor() != VALOR_VALIDO_TITULO &&
+            excursao->getNota().getValor() != VALOR_VALIDO_NOTA && excursao->getCidade().getValor() != VALOR_VALIDO_CIDADE &&
+            excursao->getDuracao().getValor() != VALOR_VALIDO_DURACAO && excursao->getDescricao().getValor() != VALOR_VALIDO_DESCRICAO &&
+            excursao->getEndereco().getValor() != VALOR_VALIDO_ENDERECO)
             estado = FALHA;
     }
 
