@@ -483,7 +483,7 @@ void Nota::setValor(int valor) {
 //Duracao:
 
 void Duracao::validar(int valor){
-     int i;
+    int i;
     bool found = false;
 
     for(i=0;i<5;i++){
