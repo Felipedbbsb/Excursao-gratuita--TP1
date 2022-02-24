@@ -7,7 +7,7 @@
 using namespace std;
 
 /* -----------------------------------------------------------------------
-// Estrutura de código sugerida para declaração de classe entidade.
+// Estrutura de cÃ³digo sugerida para declaraÃ§Ã£o de classe entidade.
 // Substituir Entidade por nome da classe.
 // Substituir Dominio.
 // Substituir nomeAtributo.
@@ -15,8 +15,8 @@ class Entidade {
     private:
             Dominio nomeAtributo;                   // Declarar cada atributo da classe.
     public:
-            void setnomeAtributo(const Dominio&);   // Declarar método set para cada atributo.
-            Dominio getnomeAtributo() const;        // Declarar método get para cada atributo.
+            void setnomeAtributo(const Dominio&);   // Declarar mÃ©todo set para cada atributo.
+            Dominio getnomeAtributo() const;        // Declarar mÃ©todo get para cada atributo.
 };
 inline void Entidade::setnomeAtributo(const Dominio &nomeAtributo){
     this->nomeAtributo = nomeAtributo;
@@ -26,7 +26,7 @@ inline Dominio Entidade::getnomeAtributo() const{
 }
 ----------------------------------------------------------------------- */
 // -----------------------------------------------------------------------
-// Exemplo de declaração de classe entidade e implementações de métodos.
+// Exemplo de declaraÃ§Ã£o de classe entidade e implementaÃ§Ãµes de mÃ©todos.
 // Matricula: 202021749
 // Felipe Dantas Borges
 
@@ -117,7 +117,7 @@ inline Endereco Excursao::getEndereco() const {
 // -----------------------------------------------------------------------
 // Matricula: 202006420
 // Gustavo Pierre Starling
-// Sessão:
+// SessÃ£o:
 
 class Sessao {
 private:
@@ -134,11 +134,11 @@ public:
     Data getData() const;
 
     void setHorario(const Horario&);
-    Nota getHorario() const;
+    Horario getHorario() const;
 
     void setIdioma(const Idioma&);
     Idioma getIdioma() const;
-
+};
 //#--------------------------------------------------------
 inline void Sessao::setCodigo(const Codigo& codigo){
     this->codigo = codigo;
@@ -167,5 +167,90 @@ inline void Sessao::setIdioma(const Idioma& idioma){
 inline Idioma Sessao::getIdioma() const {
     return idioma;
 }
+
+//----------------------------------------------------------------------- */
+//Matricula: 202006448
+// Rafael HamÃº Campos
+class Avaliacao{
+private:
+
+    Codigo codigo;
+    Nota nota ;
+    Descricao descricao ;
+
+public:
+    void setCodigo(const Codigo&);
+    Codigo getCodigo() const;
+
+    void setNota(const Nota&);
+    Nota getNota() const;
+
+    void setDescricao(const Descricao&);
+    Descricao getDescricao() const;
+
+};
+
+//#--------------------------------------------------------
+inline void Avaliacao::setCodigo(const Codigo& codigo){
+    this->codigo = codigo;
+}
+inline Codigo Avaliacao::getCodigo() const {
+    return codigo;
+}
+//#---------------------
+inline void Avaliacao::setNota(const Nota& nota){
+    this->nota = nota;
+}
+inline Nota Avaliacao::getNota() const {
+    return nota;
+}
+//#---------------------
+inline void Avaliacao::setDescricao(const Descricao& descricao){
+    this->descricao = descricao;
+}
+inline Descricao Avaliacao::getDescricao() const {
+    return descricao;
+}
+//----------------------------------------------------------------------- */
+//Matricula: 202006448
+// Rafael HamÃº Campos
+class Usuario{
+private:
+    Nome nome;
+    Email email;
+    Senha senha;
+public:
+    void setNome(const Nome&);
+    Nome getNome() const;
+
+    void setEmail(const Email&);
+    Email getEmail() const;
+
+    void setSenha(const Senha&);
+    Senha getSenha() const;
+};
+
+//#---------------------
+inline void Usuario::setNome(const Nome& nome){
+    this->nome = nome;
+}
+inline Nome Usuario::getNome() const {
+    return nome;
+}
+//#---------------------
+inline void Usuario::setEmail(const Email& email){
+    this->email = email;
+}
+inline Email Usuario::getEmail() const {
+    return email;
+}
+//#---------------------
+inline void Usuario::setSenha(const Senha& senha){
+    this->senha = senha;
+}
+inline Senha Usuario::getSenha() const {
+    return senha;
+}
+
 
 #endif // ENTIDADES_H_INCLUDED
