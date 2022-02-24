@@ -1,9 +1,9 @@
-// Diretivas de compilaÁ„o para controlar processo de inclus„o.
+// Diretivas de compila√ß√£o para controlar processo de inclus√£o.
 
 #ifndef TESTES_H_INCLUDED
 #define TESTES_H_INCLUDED
 
-// Incluir cabeÁalhos.
+// Incluir cabe√ßalhos.
 
 #include "dominios.h"
 #include "entidades.h"
@@ -17,19 +17,19 @@ using namespace std;
 // Email:
 class TUEmail {
 private:
-    const static int VALOR_VALIDO   = "naruto2002&~@fmail12";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    const static int VALOR_INVALIDO = "naruto2002@..fmail12&~";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    Email *email;                         // ReferÍncia para unidade em teste.
+    const string VALOR_VALIDO   = "naruto2002&~@fmail12";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    const string VALOR_INVALIDO = "naruto2002@..fmail12&~";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    Email *email;                         // Refer√™ncia para unidade em teste.
     int estado;                             // Estado do teste.
-    void setUp();                           // MÈtodo para criar unidade em teste.
-    void tearDown();                        // MÈtodo para destruir unidade em teste.
-    void testarCenarioSucesso();            // Cen·rio de teste.
-    void testarCenarioFalha();              // Cen·rio de teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
+    void testarCenarioFalha();              // Cen√°rio de teste.
 
 public:
-    const static int SUCESSO =  0;          // DefiniÁ„o de constante para reportar resultado de teste.
-    const static int FALHA   = -1;          // DefiniÁ„o de constante para reportar resultado de teste.
-    int run();                              // MÈtodo para executar teste.
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
 };
 
 
@@ -41,19 +41,19 @@ public:
 
 class TUData {
 private:
-    const static int VALOR_VALIDO   = "13-Abril-2002";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    const static int VALOR_INVALIDO = "30-Fev-1999";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    Data *data;                         // ReferÍncia para unidade em teste.
+    const string VALOR_VALIDO   = "13-Abril-2002";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    const string VALOR_INVALIDO = "30-Fev-1999";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    Data *data;                         // Refer√™ncia para unidade em teste.
     int estado;                             // Estado do teste.
-    void setUp();                           // MÈtodo para criar unidade em teste.
-    void tearDown();                        // MÈtodo para destruir unidade em teste.
-    void testarCenarioSucesso();            // Cen·rio de teste.
-    void testarCenarioFalha();              // Cen·rio de teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
+    void testarCenarioFalha();              // Cen√°rio de teste.
 
 public:
-    const static int SUCESSO =  0;          // DefiniÁ„o de constante para reportar resultado de teste.
-    const static int FALHA   = -1;          // DefiniÁ„o de constante para reportar resultado de teste.
-    int run();                              // MÈtodo para executar teste.
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
 };
 
 
@@ -65,19 +65,19 @@ public:
 
 class TUEndereco {
 private:
-    const static int VALOR_VALIDO   = "QTLP.214";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    const static int VALOR_INVALIDO = "QTLP..2144545435447I9s";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    Endereco *endereco;                         // ReferÍncia para unidade em teste.
+    const string VALOR_VALIDO   = "QTLP.214";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    const string VALOR_INVALIDO = "QTLP..2144545435447I9s";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    Endereco *endereco;                         // Refer√™ncia para unidade em teste.
     int estado;                             // Estado do teste.
-    void setUp();                           // MÈtodo para criar unidade em teste.
-    void tearDown();                        // MÈtodo para destruir unidade em teste.
-    void testarCenarioSucesso();            // Cen·rio de teste.
-    void testarCenarioFalha();              // Cen·rio de teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
+    void testarCenarioFalha();              // Cen√°rio de teste.
 
 public:
-    const static int SUCESSO =  0;          // DefiniÁ„o de constante para reportar resultado de teste.
-    const static int FALHA   = -1;          // DefiniÁ„o de constante para reportar resultado de teste.
-    int run();                              // MÈtodo para executar teste.
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
 };
 
 
@@ -89,19 +89,19 @@ public:
 
 class TUTitulo {
 private:
-    const static int VALOR_VALIDO   = "Yosemite";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    const static int VALOR_INVALIDO = "Yo..s3mite";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    Titulo *titulo;                         // ReferÍncia para unidade em teste.
+    const string VALOR_VALIDO   = "Yosemite";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    const string VALOR_INVALIDO = "Yo..s3mite";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    Titulo *titulo;                         // Refer√™ncia para unidade em teste.
     int estado;                             // Estado do teste.
-    void setUp();                           // MÈtodo para criar unidade em teste.
-    void tearDown();                        // MÈtodo para destruir unidade em teste.
-    void testarCenarioSucesso();            // Cen·rio de teste.
-    void testarCenarioFalha();              // Cen·rio de teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
+    void testarCenarioFalha();              // Cen√°rio de teste.
 
 public:
-    const static int SUCESSO =  0;          // DefiniÁ„o de constante para reportar resultado de teste.
-    const static int FALHA   = -1;          // DefiniÁ„o de constante para reportar resultado de teste.
-    int run();                              // MÈtodo para executar teste.
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
 };
 
 
@@ -113,19 +113,19 @@ public:
 
 class TUCidade {
 private:
-    const static int VALOR_VALIDO   = "Hong Kong";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    const static int VALOR_INVALIDO = "Brasil";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    Cidade *cidade;                         // ReferÍncia para unidade em teste.
+    const string VALOR_VALIDO   = "Hong Kong";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    const string VALOR_INVALIDO = "Brasil";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    Cidade *cidade;                         // Refer√™ncia para unidade em teste.
     int estado;                             // Estado do teste.
-    void setUp();                           // MÈtodo para criar unidade em teste.
-    void tearDown();                        // MÈtodo para destruir unidade em teste.
-    void testarCenarioSucesso();            // Cen·rio de teste.
-    void testarCenarioFalha();              // Cen·rio de teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
+    void testarCenarioFalha();              // Cen√°rio de teste.
 
 public:
-    const static int SUCESSO =  0;          // DefiniÁ„o de constante para reportar resultado de teste.
-    const static int FALHA   = -1;          // DefiniÁ„o de constante para reportar resultado de teste.
-    int run();                              // MÈtodo para executar teste.
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
 };
 
 
@@ -137,19 +137,19 @@ public:
 
 class TUCodigo {
 private:
-    const static int VALOR_VALIDO   = "0000011";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    const static int VALOR_INVALIDO = "0000017";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    Codigo *codigo;                         // ReferÍncia para unidade em teste.
+    const string VALOR_VALIDO   = "0000011";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    const string VALOR_INVALIDO = "0000017";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    Codigo *codigo;                         // Refer√™ncia para unidade em teste.
     int estado;                             // Estado do teste.
-    void setUp();                           // MÈtodo para criar unidade em teste.
-    void tearDown();                        // MÈtodo para destruir unidade em teste.
-    void testarCenarioSucesso();            // Cen·rio de teste.
-    void testarCenarioFalha();              // Cen·rio de teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
+    void testarCenarioFalha();              // Cen√°rio de teste.
 
 public:
-    const static int SUCESSO =  0;          // DefiniÁ„o de constante para reportar resultado de teste.
-    const static int FALHA   = -1;          // DefiniÁ„o de constante para reportar resultado de teste.
-    int run();                              // MÈtodo para executar teste.
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
 };
 
 
@@ -161,19 +161,19 @@ public:
 
 class TUHorario {
 private:
-    const static int VALOR_VALIDO   = "23:58";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    const static int VALOR_INVALIDO = "24:68";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    Horario *horario;                         // ReferÍncia para unidade em teste.
+    const string VALOR_VALIDO   = "23:58";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    const string VALOR_INVALIDO = "24:68";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    Horario *horario;                         // Refer√™ncia para unidade em teste.
     int estado;                             // Estado do teste.
-    void setUp();                           // MÈtodo para criar unidade em teste.
-    void tearDown();                        // MÈtodo para destruir unidade em teste.
-    void testarCenarioSucesso();            // Cen·rio de teste.
-    void testarCenarioFalha();              // Cen·rio de teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
+    void testarCenarioFalha();              // Cen√°rio de teste.
 
 public:
-    const static int SUCESSO =  0;          // DefiniÁ„o de constante para reportar resultado de teste.
-    const static int FALHA   = -1;          // DefiniÁ„o de constante para reportar resultado de teste.
-    int run();                              // MÈtodo para executar teste.
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
 };
 
 
@@ -185,19 +185,19 @@ public:
 
 class TUSenha {
 private:
-    const static int VALOR_VALIDO   = "Ba34dy";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    const static int VALOR_INVALIDO = "AAAAAA";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    Senha *senha;                         // ReferÍncia para unidade em teste.
+    const string VALOR_VALIDO   = "Ba34dy";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    const string VALOR_INVALIDO = "AAAAAA";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    Senha *senha;                         // Refer√™ncia para unidade em teste.
     int estado;                             // Estado do teste.
-    void setUp();                           // MÈtodo para criar unidade em teste.
-    void tearDown();                        // MÈtodo para destruir unidade em teste.
-    void testarCenarioSucesso();            // Cen·rio de teste.
-    void testarCenarioFalha();              // Cen·rio de teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
+    void testarCenarioFalha();              // Cen√°rio de teste.
 
 public:
-    const static int SUCESSO =  0;          // DefiniÁ„o de constante para reportar resultado de teste.
-    const static int FALHA   = -1;          // DefiniÁ„o de constante para reportar resultado de teste.
-    int run();                              // MÈtodo para executar teste.
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
 };
 
 
@@ -209,97 +209,97 @@ public:
 
 class TUNome {
 private:
-    const static int VALOR_VALIDO   = "Mr. Dal";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    const static int VALOR_INVALIDO = "Mr  .Dal";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    Nome *nome;                         // ReferÍncia para unidade em teste.
+    const string VALOR_VALIDO   = "Mr. Dal";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    const string VALOR_INVALIDO = "Mr  .Dal";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    Nome *nome;                         // Refer√™ncia para unidade em teste.
     int estado;                             // Estado do teste.
-    void setUp();                           // MÈtodo para criar unidade em teste.
-    void tearDown();                        // MÈtodo para destruir unidade em teste.
-    void testarCenarioSucesso();            // Cen·rio de teste.
-    void testarCenarioFalha();              // Cen·rio de teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
+    void testarCenarioFalha();              // Cen√°rio de teste.
 
 public:
-    const static int SUCESSO =  0;          // DefiniÁ„o de constante para reportar resultado de teste.
-    const static int FALHA   = -1;          // DefiniÁ„o de constante para reportar resultado de teste.
-    int run();                              // MÈtodo para executar teste.
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
 };
 
 //----------------------------------------------------------------------- */
 //Matricula: 202006448
-// Rafael Ham˙ Campos
+// Rafael Ham√∫ Campos
 class TUIdioma {
 private:
-    const static int VALOR_VALIDO   = "Ingles";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    const static int VALOR_INVALIDO = "Blablabla";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    Idioma *Idioma;                         // ReferÍncia para unidade em teste.
+    const string VALOR_VALIDO   = "Ingles";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    const string VALOR_INVALIDO = "Blablabla";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    Idioma *idioma;                         // Refer√™ncia para unidade em teste.
     int estado;                             // Estado do teste.
-    void setUp();                           // MÈtodo para criar unidade em teste.
-    void tearDown();                        // MÈtodo para destruir unidade em teste.
-    void testarCenarioSucesso();            // Cen·rio de teste.
-    void testarCenarioFalha();              // Cen·rio de teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
+    void testarCenarioFalha();              // Cen√°rio de teste.
 
 public:
-    const static int SUCESSO =  0;          // DefiniÁ„o de constante para reportar resultado de teste.
-    const static int FALHA   = -1;          // DefiniÁ„o de constante para reportar resultado de teste.
-    int run();                              // MÈtodo para executar teste.
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
 };
 
 //----------------------------------------------------------------------- */
 //Matricula: 202006448
-// Rafael Ham˙ Campos
+// Rafael Ham√∫ Campos
 class TUNota {
 private:
-    const static int VALOR_VALIDO   = "0";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    const static int VALOR_INVALIDO = "7";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    Nota *nota;                         // ReferÍncia para unidade em teste.
+    const int VALOR_VALIDO   = 0;   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    const int VALOR_INVALIDO = 7;   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    Nota *nota;                         // Refer√™ncia para unidade em teste.
     int estado;                             // Estado do teste.
-    void setUp();                           // MÈtodo para criar unidade em teste.
-    void tearDown();                        // MÈtodo para destruir unidade em teste.
-    void testarCenarioSucesso();            // Cen·rio de teste.
-    void testarCenarioFalha();              // Cen·rio de teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
+    void testarCenarioFalha();              // Cen√°rio de teste.
 
 public:
-    const static int SUCESSO =  0;          // DefiniÁ„o de constante para reportar resultado de teste.
-    const static int FALHA   = -1;          // DefiniÁ„o de constante para reportar resultado de teste.
-    int run();                              // MÈtodo para executar teste.
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
 };
 //----------------------------------------------------------------------- */
 //Matricula: 202006448
-// Rafael Ham˙ Campos
+// Rafael Ham√∫ Campos
 class TUDuracao {
 private:
-    const static int VALOR_VALIDO   = "30";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    const static int VALOR_INVALIDO = "0";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    Duracao *duracao;                         // ReferÍncia para unidade em teste.
+    const int VALOR_VALIDO   = 30;   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    const int VALOR_INVALIDO = 0;   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    Duracao *duracao;                         // Refer√™ncia para unidade em teste.
     int estado;                             // Estado do teste.
-    void setUp();                           // MÈtodo para criar unidade em teste.
-    void tearDown();                        // MÈtodo para destruir unidade em teste.
-    void testarCenarioSucesso();            // Cen·rio de teste.
-    void testarCenarioFalha();              // Cen·rio de teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
+    void testarCenarioFalha();              // Cen√°rio de teste.
 
 public:
-    const static int SUCESSO =  0;          // DefiniÁ„o de constante para reportar resultado de teste.
-    const static int FALHA   = -1;          // DefiniÁ„o de constante para reportar resultado de teste.
-    int run();                              // MÈtodo para executar teste.
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
 };
 //----------------------------------------------------------------------- */
 //Matricula: 202006448
-// Rafael Ham˙ Campos
+// Rafael Ham√∫ Campos
 class TUDescricao {
 private:
-    const static int VALOR_VALIDO   = "Teste";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    const static int VALOR_INVALIDO = "tes.. te";   // DefiniÁ„o de constante para evitar n˙mero m·gico.
-    Descricao *descricao;                         // ReferÍncia para unidade em teste.
+    const string VALOR_VALIDO   = "Teste";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    const string VALOR_INVALIDO = "tes.. te";   // Defini√ß√£o de constante para evitar n√∫mero m√°gico.
+    Descricao *descricao;                         // Refer√™ncia para unidade em teste.
     int estado;                             // Estado do teste.
-    void setUp();                           // MÈtodo para criar unidade em teste.
-    void tearDown();                        // MÈtodo para destruir unidade em teste.
-    void testarCenarioSucesso();            // Cen·rio de teste.
-    void testarCenarioFalha();              // Cen·rio de teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
+    void testarCenarioFalha();              // Cen√°rio de teste.
 
 public:
-    const static int SUCESSO =  0;          // DefiniÁ„o de constante para reportar resultado de teste.
-    const static int FALHA   = -1;          // DefiniÁ„o de constante para reportar resultado de teste.
-    int run();                              // MÈtodo para executar teste.
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
 };
 
 
@@ -318,20 +318,20 @@ public:
 // ENTIDADE Sessao:
 class TUSessao {
 private:
-    const static int VALOR_VALIDO_CODIGO  = "0000011";
-    const static int VALOR_VALIDO_DATA    = "13-Abril-2002";
-    const static int VALOR_VALIDO_HORARIO = "23:58";
-    const static int VALOR_VALIDO_IDIOMA  = "Ingles";
-    Sessao *sessao;                         // ReferÍncia para unidade em teste.
+    const string VALOR_VALIDO_CODIGO  = "0000011";
+    const string VALOR_VALIDO_DATA    = "13-Abril-2002";
+    const string VALOR_VALIDO_HORARIO = "23:58";
+    const string VALOR_VALIDO_IDIOMA  = "Ingles";
+    Sessao *sessao;                         // Refer√™ncia para unidade em teste.
     int estado;                             // Estado do teste.
-    void setUp();                           // MÈtodo para criar unidade em teste.
-    void tearDown();                        // MÈtodo para destruir unidade em teste.
-    void testarCenarioSucesso();            // Cen·rio de teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
 
 public:
-    const static int SUCESSO =  0;          // DefiniÁ„o de constante para reportar resultado de teste.
-    const static int FALHA   = -1;          // DefiniÁ„o de constante para reportar resultado de teste.
-    int run();                              // MÈtodo para executar teste.
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
 
 };
 
@@ -343,26 +343,70 @@ public:
 
 class TUExcursao {
 private:
-    const static int VALOR_VALIDO_CODIGO  = "0000011";
-    const static int VALOR_VALIDO_TITULO= "Yosemite";
-    const static int VALOR_VALIDO_NOTA   = 4;
-    const static int VALOR_VALIDO_CIDADE   = "Hong Kong";
-    const static int VALOR_VALIDO_DURACAO  = "60";
-    const static int VALOR_VALIDO_DESCRICAO   = "maneiro";
-    const static int VALOR_VALIDO_ENDERECO   = "QTLP.214";
-    Excursao *excursao;                         // ReferÍncia para unidade em teste.
+    const string VALOR_VALIDO_CODIGO  = "0000011";
+    const string VALOR_VALIDO_TITULO= "Yosemite";
+    const int VALOR_VALIDO_NOTA   = 4;
+    const string VALOR_VALIDO_CIDADE   = "Hong Kong";
+    const string VALOR_VALIDO_DURACAO  = "60";
+    const string VALOR_VALIDO_DESCRICAO   = "maneiro";
+    const string VALOR_VALIDO_ENDERECO   = "QTLP.214";
+    Excursao *excursao;                         // Refer√™ncia para unidade em teste.
     int estado;                             // Estado do teste.
-    void setUp();                           // MÈtodo para criar unidade em teste.
-    void tearDown();                        // MÈtodo para destruir unidade em teste.
-    void testarCenarioSucesso();            // Cen·rio de teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
 
 public:
-    const static int SUCESSO =  0;          // DefiniÁ„o de constante para reportar resultado de teste.
-    const static int FALHA   = -1;          // DefiniÁ„o de constante para reportar resultado de teste.
-    int run();                              // MÈtodo para executar teste.
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
 
 };
 
+//----------------------------------------------------------------------- */
+//Matricula: 202006448
+// Rafael Ham√∫ Campos
+// ENTIDADE Avaliacao:
+class TUAvaliacao {
+private:
+    const string VALOR_VALIDO_CODIGO  = "0000011";
+    const string VALOR_VALIDO_NOTA    = "6";
+    const string VALOR_VALIDO_DESCRICAO = "TESTE";
 
+    Avaliacao *avaliacao;                         // Refer√™ncia para unidade em teste.
+    int estado;                             // Estado do teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
+
+public:
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
+
+};
+
+//----------------------------------------------------------------------- */
+//Matricula: 202006448
+// Rafael Ham√∫ Campos
+// ENTIDADE Avaliacao:
+class TUUsuario {
+private:
+    const string VALOR_VALIDO_NOME  = "Rafael";
+    const string VALOR_VALIDO_EMAIL = "partelocal@dominio";
+    const string VALOR_VALIDO_SENHA = "Senha1";
+
+    Usuario *usuario;                         // Refer√™ncia para unidade em teste.
+    int estado;                             // Estado do teste.
+    void setUp();                           // M√©todo para criar unidade em teste.
+    void tearDown();                        // M√©todo para destruir unidade em teste.
+    void testarCenarioSucesso();            // Cen√°rio de teste.
+
+public:
+    const static int SUCESSO =  0;          // Defini√ß√£o de constante para reportar resultado de teste.
+    const static int FALHA   = -1;          // Defini√ß√£o de constante para reportar resultado de teste.
+    int run();                              // M√©todo para executar teste.
+
+};
 
 #endif // TESTES_H_INCLUDED
