@@ -28,7 +28,7 @@ int main()
     // Email:
 
     TUEmail testeemail;
-    switch(testedeemail.run()){
+    switch(testeemail.run()){
     case TUEmail::SUCESSO:
         cout << "Email: SUCESSO" << endl;
         break;
